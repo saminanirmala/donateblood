@@ -1,0 +1,983 @@
+@charset "utf-8";
+
+/*-----------------------
+Copyright. z-index media.
+http://www.z-indexmedia.com
+-----------------------*/
+
+
+/*------------------
+GLOBAL :
+--------------------*/
+
+	html, div, span, applet, object, iframe,
+	h1, h2, h3, h4, h5, h6, blockquote, pre,
+	a, abbr, acronym, address, big, cite, code,
+	del, dfn, em, font, img, ins, kbd, q, s, samp,
+	small, strike, sub, sup, tt, var,
+	dl, dt, dd, ol, ul, li,
+	fieldset, form, label, legend {
+		margin:0;
+		padding:0;
+		border:0;
+		outline:0;
+		font-style:normal;
+		font-size:100%;
+		font-family:inherit;
+		vertical-align:baseline;
+		list-style:none;
+		font:11px Tahoma, Geneva, sans-serif;
+	}
+	
+	body {
+		margin:0;
+		padding:0;
+		border:0;
+		font:11px Tahoma, Geneva, sans-serif;
+		color:#000;
+	}
+	
+	body.loginpage {
+		background:#121212;
+		}
+	
+	a {
+		text-decoration:none;
+		}
+		
+	input:focus {
+		outline:0
+		}
+		
+/*------------------
+LOGIN PAGE :
+--------------------*/
+	
+	#wp-login {
+		width:475px;
+		height:300px;
+		margin:150px auto;
+		}
+		
+		.logo {
+			width:127px;
+			height:70px;
+			float:left;
+			overflow:hidden;
+			}
+			
+		.login-form {
+			width:475px;
+			height:145px;
+			float:left;
+			overflow:hidden;
+			background:#fff;
+			}
+			
+			.login-form .left {
+				width:200px;
+				height:105px;
+				float:left;
+				text-align:center;
+				vertical-align:middle;
+				padding-top:40px;
+				border-right:1px dashed #ccc;
+				}
+				
+			.login-form .right{
+				width:170px;
+				height:105px;
+				padding-top:40px;
+				padding-left:30px;
+				float:left;
+				}
+				
+				.login-form .right img{
+					float:left;
+					}
+				
+				.login-form .right input {
+					width:142px;
+					float:left;
+					border:1px solid #ccc;
+					border-left:none;
+					font:11px Tahoma, Geneva, sans-serif;
+					color:#666;
+					padding:4px;
+					background:url(../img/input-bg.jpg) repeat-x;
+					margin-bottom:10px;
+					margin-right:0px;
+					}
+			
+			.go {
+				width:53px;
+				padding-left:21px;
+				height:100px;
+				padding-top:45px;
+				float:left;
+				background:url(../img/bg-go.jpg) repeat-y;
+				}
+		
+		#wp-login span{
+			width:475px;
+			display:block;
+			float:left;
+			overflow:hidden;
+			margin-bottom:25px;
+			}
+				
+		#wp-login span a {
+			font:11px Tahoma, Geneva, sans-serif;
+			color:#666;
+			text-decoration:underline;
+			}
+			
+			#wp-login span a:hover {
+			text-decoration:none;
+			}
+			
+		#wp-login strong {
+			width:475px;
+			float:left;
+			color:#666;
+			font-weight:bold;
+			text-decoration:none;
+			font-weight:bold;
+			}
+			
+			#wp-login strong a {
+				font:11px Tahoma, Geneva, sans-serif;
+				color:#666;
+				text-decoration:underline;
+				font-weight:bold;
+				}
+				
+				#wp-login strong a:hover {
+					text-decoration:none;
+					}
+					
+				.login-form .right span {
+color:red;
+background:url(../img/wrong.jpg) no-repeat 2px;
+padding-left:20px;
+line-height:20px;
+}
+	
+	
+/*------------------
+MAIN :
+--------------------*/
+
+	#wrapper {
+		width:1010px;
+		height:auto;
+		margin:0 auto;
+		overflow:hidden;
+		}
+		
+/*------------------
+HEADER :
+--------------------*/
+		
+	#header {
+		width:1010px;
+		height:110px;
+		float:left;
+		overflow:hidden;
+		}
+		
+		#logo {
+			width:250px;
+			height:auto;
+			float:left;
+			overflow:hidden;
+			margin-top:20px;
+			}
+		
+		#intro {
+			width:300px;
+			height:70px;
+			float:right;
+			overflow:hidden;
+			padding-top:40px;
+			}
+			
+			#intro span {
+				width:162px;
+				height:25px;
+				float:left;
+				overflow:hidden;
+				text-align:right;
+				text-transform:uppercase;
+				}
+				
+				#intro span strong {
+					color:#000;
+					}
+					
+			#intro a {
+				padding:6px;
+				border:1px solid #ccc;
+				color:#999;
+				font-weight:bold;
+				float:left;
+				margin-left:5px;
+				-moz-border-radius: 3px;
+				-webkit-border-radius: 3px;
+				}
+					
+				#intro a:hover {
+					background:#999;
+					color:#fff;
+					border:1px solid #999;
+					}
+				
+				#intro a.red:hover {
+					background:#f00;
+					color:#fff;
+					border:1px solid #f00;
+					}
+					
+				#intro a.red {
+					color:#f00;
+					}
+			
+/*------------------
+MENU :
+--------------------*/	
+
+	#menu {
+		width:1010px;
+		height:40px;
+		background:#2D3133;
+		-moz-border-radius: 3px;
+		-webkit-border-radius: 3px;
+		float:left;
+		margin-bottom:25px;
+		}
+		
+		#menu li {
+			display:inline;
+			height:40px;
+			text-transform:uppercase;
+			float:left;
+			}
+		
+		#menu li a {
+			font:bold 11px/40px Tahoma, Geneva, sans-serif;
+			color:#FFF;
+			display:inline-block;
+			padding:0 15px; /*TO INCREASE THE WIDTH OF EACH MENU TAB*/
+			}
+			
+			#menu li a:hover {
+			background:#666;
+			}
+		
+			#menu li a.home {
+				padding-top:15px;
+				height:25px;
+				}
+			
+				#menu li a.home:hover, #menu li a.first {
+					-moz-border-radius-topleft: 3px;
+					-webkit-border-top-left-radius: 3px;
+					-moz-border-radius-bottomleft: 3px;
+					-webkit-border-bottom-left-radius: 3px;
+					}	
+			
+			#menu li a.active {
+				background:#555;
+				}
+
+/*------------------
+SECTION :
+--------------------*/	
+
+	#section {
+		width:1010px;
+		height:auto;
+		float:left;
+		overflow:hidden;
+		}
+		
+/*------------------
+DASHBOARD :
+--------------------*/
+
+	.box {
+		width:150px;
+		height:170px;
+		padding:15px;
+		float:left;
+		display:inline;
+		overflow:hidden;
+		-moz-border-radius: 3px;
+		-webkit-border-radius: 3px;
+		border:1px solid #ccc;
+		margin-right:25px;
+		margin-bottom:25px;
+		text-align:left;
+		}
+		
+		.nomargin {
+			margin-right:0;
+			}
+			
+		.box:hover {
+			background:#f7f7f7;
+			}
+			
+		.box h1 {
+			padding-bottom:10px;
+			border-bottom:1px dashed #ccc;
+			font-weight:bold;
+			margin-bottom:5px;
+			}
+		
+		.firstbox, .firstbox:hover {
+			background:#2d3133 url(../img/firstbox.jpg) no-repeat right bottom;
+			border:none;
+			font:20px Tahoma, Geneva, sans-serif;
+			color:#CCC;
+			}
+		
+		.box a {
+			font:11px/20px Tahoma, Geneva, sans-serif;
+			color:#666;
+			border-bottom:1px dotted #ccc;
+			display:block;
+			}
+			
+			.box a:hover {
+				color:#000;
+				}
+				
+		
+/*------------------
+SIDEBAR :
+--------------------*/	
+
+	#sidebar {
+		width:190px;
+		height:auto;
+		float:left;
+		overflow:hidden;
+		margin-right:20px;
+		}
+		
+		#sidebar ul {
+			-moz-border-radius-topleft: 3px;
+			-webkit-border-top-left-radius: 3px;
+			-moz-border-radius-bottomleft: 3px;
+			-webkit-border-bottom-left-radius: 3px;
+			border:1px solid #ccc;
+			border-right:none;
+			background:#f0f0f0;
+			}
+			
+		#sidebar ul li {
+			border-top:1px solid #ccc;
+			font:bold 11px/40px Tahoma, Geneva, sans-serif;
+			height:auto;
+			color:#000;
+			overflow:hidden;
+			}
+			
+			#sidebar ul li.first {
+				border-top:none;
+				border-right:1px solid #ccc;
+				font:20px/30px Arial, Helvetica, sans-serif;
+				padding:8px 0 8px 5px;
+				}
+			
+				#sidebar ul li a {
+					font:bold 11px/40px Tahoma, Geneva, sans-serif;
+					border-right:1px solid #ccc;
+					color:#000;
+					height:40px;
+					display:block;
+					padding-left:5px;
+					}
+				
+					#sidebar ul li a:hover, #sidebar ul li a.active {
+						background:#fff;
+						border-right:1px solid #fff;
+						}
+					
+				#sidebar .last {
+					border-bottom:none;
+					-moz-border-radius-bottomleft: 3px;
+					-webkit-border-bottom-left-radius: 3px;
+					}
+				
+				#sidebar .blank {
+					border-top:1px solid #ccc;
+					border-right:1px solid #ccc;
+					font:bold 11px/20px Tahoma, Geneva, sans-serif;
+					color:#f00;
+					padding: 10px 0 10px 5px;
+					background:#ffdfdf;
+					}
+		
+		#sidebar .end {
+			width:190px;
+			height:149px;
+			background:url(../img/sidebar-end.jpg) no-repeat right;
+			}
+			
+/*------------------
+CONTENT :
+--------------------*/	
+
+	#content {
+		width:800px;
+		height:auto;
+		float:left;
+		overflow:hidden;
+		}
+		
+		#content h1 {
+			height:40px;
+			font:20px Arial, Helvetica, sans-serif;
+			color:#000;
+			}
+			
+		#content h1 a{
+			height:40px;
+			font:20px Arial, Helvetica, sans-serif;
+			color:#000;
+			text-decoration:underline
+			}
+			
+			#content h1 a:hover{
+			
+			text-decoration:none;
+			}
+			
+		a.heading-link
+			{
+			font:20px Arial, Helvetica, sans-serif;
+			color:#000;
+			text-decoration:underline;
+			}
+			
+		a:hover.heading-link
+			{
+			font:20px Arial, Helvetica, sans-serif;
+			color:#000;
+			text-decoration:none;
+			}
+			
+			
+			#section h1 {
+			height:40px;
+			font:20px Arial, Helvetica, sans-serif;
+			color:#000;
+			}
+			
+/*------------------
+TABLE :
+--------------------*/
+		
+		table {
+			margin-bottom:25px;
+			}
+			
+			table.common {
+				padding:10px;
+				border:1px solid #ccc;
+				-moz-border-radius: 3px;
+				-webkit-border-radius: 3px;
+				margin-bottom:25px;
+				}
+		
+			
+/*-----------
+TABLE SMALL :
+-------------*/
+			
+		.table-small {
+			height:40px;
+			font:11px/38px Tahoma, Geneva, sans-serif;
+			color:#000;
+			font-weight:bold;
+			padding:0 10px;
+			border:1px solid #ccc;
+			-moz-border-radius: 3px;
+			-webkit-border-radius: 3px;
+			margin-bottom:25px;
+			}
+		
+		.table-small td {
+			height:40px;
+			}
+			
+			.table-small input, .table-small select {
+				height:18px;
+				font:11px/18px Tahoma, Geneva, sans-serif;
+				color:#000;
+				background:#fff;
+				border:1px solid #ccc;
+				float:left;
+				font-weight:normal;
+				}
+				
+					.table-small input:focus {
+						border:1px solid #000;
+						outline:0;
+						background:#f0f0f0;
+						}
+						
+				.table-small select {
+					height:22px;
+					font:11px/18px Tahoma, Geneva, sans-serif;
+					color:#000;
+					background:#fff;
+					border:1px solid #ccc;
+					float:left;
+					font-weight:normal;
+					}
+				
+				.table-small .btn {
+					background:#2d3133;
+					border:1px solid #2d3133;
+					color:#fff;
+					text-transform:uppercase;
+					line-height:18px;
+					height:22px;
+					margin-right:10px;
+					}
+					
+					.table-small .btn:focus  {
+						background:#000;
+						}
+						
+/*------------------
+TABLE ALERT :
+--------------------*/
+			
+		.info {
+			
+			font:18px/20px Tahoma, Geneva, sans-serif;
+			color:#069;
+			text-align:center;
+			border:1px solid #09f;
+			background:#DFF2FF;
+			-moz-border-radius: 3px;
+			-webkit-border-radius: 3px;
+			margin-bottom:25px;
+			height:40px;
+			
+			
+			
+			
+			}
+			
+			.info table {
+				margin-bottom:0px;
+				padding-bottom:0px;
+			}
+		
+		.info .button
+			{
+				background:#666;
+					border:1px solid #666;
+					color:#fff;
+					text-transform:uppercase;
+					line-height:18px;
+					height:22px;
+					margin-right:10px;
+			}
+			
+		.info .input
+			{
+				background:#fff;
+					border:1px solid #09f;
+					color:#000;
+					
+					font-family:Tahoma, Geneva, sans-serif;
+					color:#09f;
+					
+					
+			}
+		
+		.error {
+			font:18px/20px Tahoma, Geneva, sans-serif;
+			color:#f00;
+			text-align:center;
+			border:1px solid #f00;
+			background:#ffdfdf;
+			-moz-border-radius: 3px;
+			-webkit-border-radius: 3px;
+			margin-bottom:25px;
+			height:40px;
+			}
+		
+		.success {
+			font:18px/20px Tahoma, Geneva, sans-serif;
+			color:#6c0;
+			text-align:center;
+			border:1px solid #6c0;
+			background:#ebffd7;
+			-moz-border-radius: 3px;
+			-webkit-border-radius: 3px;
+			margin-bottom:25px;
+			height:40px;
+			}
+			
+/*------------------
+TABLE BIG :
+--------------------*/	
+	
+	.table-big {
+			border:1px solid #ccc;
+			-moz-border-radius: 3px;
+			-webkit-border-radius: 3px;
+			margin-bottom:25px;
+			}
+
+	.table-big td {
+		padding:0 10px;
+		border-top:1px dotted #ccc;
+		height:40px;
+		}
+		
+	.table-big tr.head {
+			background:#f0f0f0;
+			font-weight:bold;
+			text-transform:uppercase;
+			}
+			
+			tr.head td, tr.first td{
+				border-top:none;
+				}
+		
+	.table-big tr:hover {
+			background:#f7f7f7;
+			}
+		
+	.table-big a {
+			text-decoration:none;
+			font-weight:bold;
+			color:#000;
+			border-bottom:1px dotted #ccc;
+			}
+			
+			.table-big a:hover {
+				border-bottom:1px solid #666;	
+				}
+			
+	.table-big a.blue {
+			color:#069;
+			border-bottom:1px dotted #069;
+			}
+			
+			.table-big a.blue:hover {
+				border-bottom:1px solid #069;	
+				}
+				
+	.table-big a.red {
+			color:#f00;
+			border-bottom:1px dotted #f00;
+			}
+			
+			.table-big a.red:hover {
+				border-bottom:1px solid #f00;	
+				}
+	
+	.table-big a.green{
+			color:#6c0;
+			border-bottom:1px dotted #6c0;
+			}
+			
+			.table-big a.green:hover {
+				border-bottom:1px solid #6c0;	
+				}
+				
+	tr.open td{
+		border-top:none;
+		height:auto;
+		background:#f7f7f7;
+		line-height:30px;
+		}
+		
+	.table-big input, .table-big select {
+				height:18px;
+				font:11px/24px Tahoma, Geneva, sans-serif;
+				color:#000;
+				background:#fff;
+				border:1px solid #ccc;
+				float:left;
+				font-weight:normal;
+				}
+				
+					.table-big input:focus {
+						border:1px solid #000;
+						outline:0;
+						background:#fff;
+						}
+						
+				.table-big select {
+					height:22px;
+					font:11px/18px Tahoma, Geneva, sans-serif;
+					color:#000;
+					background:#fff;
+					border:1px solid #ccc;
+					float:left;
+					font-weight:normal;
+					}
+				
+				.table-big .btn {
+					background:#666;
+					border:1px solid #666;
+					color:#fff;
+					text-transform:uppercase;
+					line-height:18px;
+					height:22px;
+					margin-right:10px;
+					}
+					
+					.table-big .btn:focus  {
+						background:#000;
+						}
+	
+	tr.foot{
+			background:#f0f0f0;
+			font-weight:bold;
+			text-transform:uppercase;
+			}
+			
+			tr.foot:hover{
+			background:#f0f0f0;
+			}
+	
+	.foot ul li {
+		display:inline;
+		margin-right:5px;
+		float:left;
+		}
+		
+		.foot ul li a, .foot ul li.active {
+			display:inline-block;
+			padding:5px;
+			border:1px solid #ccc;
+			font-weight:normal;
+			}
+			
+			.foot ul li a:hover {
+				background:#fff;
+				border:1px solid #ccc;
+				}
+				
+		.foot ul li.active {
+			background:#fff;
+			font-weight:bold;
+			}
+			
+		
+/*------------------
+FOOTER :
+--------------------*/				
+	
+	#footer {
+		width:1010px;
+		height:70px;
+		float:left;
+		border-top:1px solid #ccc;
+		padding-top:5px;
+		margin-top:25px;
+		}
+		
+		#footer img {
+			float:left;
+			}
+		
+		#footer span {
+			float:left;
+			margin:10px 0 0 10px;
+			color:#666;
+			}
+			
+		#footer a {
+			text-decoration:underline;
+			color:#000;
+			}
+			
+			#footer a:hover {
+			text-decoration:none;
+			}
+
+
+/*------------------
+MISC :
+--------------------*/
+
+a.add {
+	background:#2d3133;
+	padding:6px;
+	font:bold 11px/20px Tahoma, Geneva, sans-serif;
+	color:#FFF;
+	float:left;
+	display:block;
+	}
+	
+	a.add:hover{
+	background:#000;
+	}
+				
+.addbox {
+	padding:0 15px;
+	color:#ccc;
+	background:#2d3133;
+	}	
+	
+		
+	.addbox input, .addbox select{
+				height:18px;
+				font:11px Tahoma, Geneva, sans-serif;
+				color:#000;
+				background:#ccc;
+				border:1px solid #ccc;
+				float:left;
+				font-weight:normal;
+				}
+				
+				
+				.addbox textarea {
+				font:11px Tahoma, Geneva, sans-serif;
+				color:#000;
+				background:#ccc;
+				border:1px solid #ccc;
+				float:left;
+				font-weight:normal;
+				}
+				
+				
+				
+					.addbox input:focus {
+						border:1px solid #000;
+						outline:0;
+						}
+						
+				.addbox select {
+					height:22px;
+					font:11px/18px Tahoma, Geneva, sans-serif;
+					color:#000;
+					background:#fff;
+					border:1px solid #ccc;
+					float:left;
+					font-weight:normal;
+					}
+				
+				.addbox .btn {
+					background:#666;
+					border:1px solid #666;
+					color:#000;
+					text-transform:uppercase;
+					line-height:18px;
+					height:22px;
+					font-weight:bold;
+					}
+					
+					.addbox .btn:focus  {
+						background:#666;
+						}
+.noborder {
+	border:none;
+	padding:10px;
+	line-height:40px;
+	float:left;
+	border:1px solid red;
+	}			
+
+
+
+
+
+
+/*table - form
+
+_______________________
+
+*/
+.table-form {
+			border:1px solid #ccc;
+			-moz-border-radius: 3px;
+			-webkit-border-radius: 3px;
+			margin-bottom:25px;
+			}
+			
+		.table-form table {
+			margin:0px;
+			}
+
+	.table-form td {
+		padding:0 10px;
+		border-top:1px dotted #ccc;
+		height:40px;
+		}
+		
+	
+		
+		
+	.table-form tr:hover {
+			background:#f7f7f7;
+			}
+		
+	.table-form a {
+			text-decoration:none;
+			font-weight:bold;
+			color:#000;
+			border-bottom:1px dotted #ccc;
+			}
+			
+			.table-form a:hover {
+				border-bottom:1px solid #666;	
+				}
+			
+	
+		
+	.table-form input, .table-form select {
+				height:18px;
+				font:11px/24px Tahoma, Geneva, sans-serif;
+				color:#000;
+				background:#fff;
+				border:1px solid #ccc;
+				float:left;
+				font-weight:normal;
+				}
+				
+					.table-form input:focus {
+						border:1px solid #000;
+						outline:0;
+						background:#fff;
+						}
+						
+				.table-form select {
+					height:22px;
+					font:11px/18px Tahoma, Geneva, sans-serif;
+					color:#000;
+					background:#fff;
+					border:1px solid #ccc;
+					float:left;
+					font-weight:normal;
+					}
+				
+				.table-form .btn {
+					background:#666;
+					border:1px solid #666;
+					color:#fff;
+					text-transform:uppercase;
+					line-height:18px;
+					height:22px;
+					margin-right:10px;
+					}
+					
+					.table-form .btn:focus  {
+						background:#000;
+						}
+						
+						
+					.capt{}
+						

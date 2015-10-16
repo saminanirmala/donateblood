@@ -1,0 +1,118 @@
+@media (min-width: 768px) {
+	
+.alightgp
+{
+	display:none;
+}
+
+ul.nav li.dropdown:hover > ul.dropdown-menu {
+    display: block;    
+}
+
+.navbar-collapse.collapse
+{
+	padding:0;
+}
+}
+
+
+@media (max-width: 1199px)
+{
+	.main_nav li a {
+   font-size:15px !important;
+      padding-left: 16px !important;
+    padding-right: 13px !important;
+}
+}
+
+@media (max-width: 991px)
+{
+	.main_nav li a {
+    font-size: 14px !important;
+    padding-left: 6px !important;
+    padding-right: 6px !important;
+}
+/*.scial {
+   
+    width: 75%;
+}*/
+}
+@media (max-width: 768px) {
+
+.main_nav li.mn_bars
+{
+	display:none;
+}
+.scial {
+    border: medium none;
+    float: none;
+    width: 100%;
+	padding-bottom:20px;
+}
+	
+}
+
+@media (min-width:768px) and (max-width:991px){
+
+.main_nav li.mn_bars
+{
+	display:none;
+}
+}
+
+
+@media (max-width: 767px)
+{
+	.bll
+	{
+		margin-bottom:30px;
+		
+	}
+	.mnu_wrp {
+    padding-left: 15px;
+}
+.navbar-default .navbar-brand {
+    color: #fff;
+}
+}
+@media (max-width: 630px)
+{
+	.rght, .lft
+	{
+		width:100%;
+		display:block;
+		margin-bottom:20px;
+	}
+	.frm_field label b
+	{
+		display:block;
+		float:none;
+		margin-bottom:8px;
+	}
+	.txt, .txts
+	{
+		width:100%;
+	}
+	.bt
+	{
+		margin-left:0px;
+	}
+}
+@media (max-width: 450px)
+{
+.register {
+        padding: 40px 18px;
+}
+.register h3 {
+   
+    font: bolder 22px "open_sansregular";
+  
+}
+}
+@media (max-width: 390px)
+{.scial {
+   
+	padding-bottom:40px;
+}
+
+}
