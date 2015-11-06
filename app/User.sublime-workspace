@@ -1,0 +1,326 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/wamp/www/blood/app/Http/routes.php",
+		"/C/wamp/www/blood/app/Http/Controllers/Controller.php",
+		"/C/wamp/www/gotonepal/application/controllers/admin/landing.php",
+		"/C/wamp/www/gotonepal/assets/js/custom.js",
+		"/C/wamp/www/gotonepal/application/views/news/news_view.php",
+		"/C/wamp/www/gotonepal/application/views/activity_view.php",
+		"/C/wamp/www/gotonepal/application/views/home_view.php",
+		"/C/wamp/www/gotonepal/application/views/blog/blog_detail_view.php",
+		"/C/wamp/www/gotonepal/application/views/blog/blog_view.php",
+		"/C/wamp/www/gotonepal/application/controllers/admin/content.php",
+		"/C/wamp/www/gotonepal/application/views/news/single_news_view.php",
+		"/C/wamp/www/gotonepal/application/views/downloads_view.php",
+		"/C/wamp/www/gotonepal/application/controllers/landing.php",
+		"/C/wamp/www/gotonepal/application/views/admin/order_view.php",
+		"/C/wamp/www/gotonepal/application/config/routes.php",
+		"/C/wamp/www/gotonepal/application/views/package/package_view.php",
+		"/C/wamp/www/gotonepal/application/views/includes/footer_view.php",
+		"/C/wamp/www/jon-crocilla/assets/js/custom.js",
+		"/C/wamp/www/gotonepal/application/controllers/admin/downloads.php",
+		"/C/wamp/www/gotonepal/application/controllers/download.php",
+		"/C/wamp/www/gotonepal/application/views/admin/downloads/downloads_list_view.php",
+		"/C/wamp/www/gotonepal/application/views/faq_view.php",
+		"/C/wamp/www/gotonepal/application/views/includes/enquiry.php",
+		"/C/wamp/www/philidephia/wp-content/themes/philidephia/page-templates/taxonomy-guide-downloads.php",
+		"/C/Users/user/Pictures/Desktop/callback.php",
+		"/C/Users/user/Pictures/Desktop/taxonomy-guide-downloads_copy.html",
+		"/C/wamp/www/philidephia/wp-content/themes/philidephia/assets/css/custom.css",
+		"/C/wamp/www/ebs/wp-content/themes/exact-billing-solutions/page-templates/home_template.php",
+		"/C/wamp/www/ebs/wp-content/themes/exact-billing-solutions/searchform.php",
+		"/C/wamp/www/philidephia/wp-content/themes/philidephia/single-videos.php",
+		"/C/wamp/www/philidephia/wp-content/themes/philidephia/single-education.php",
+		"/C/wamp/www/philidephia/wp-content/themes/philidephia/page-templates/deep_roots_template.php",
+		"/C/wamp/www/philidephia/wp-content/themes/philidephia/page-templates/home_template.php",
+		"/C/wamp/www/philidephia/wp-content/themes/philidephia/functions.php",
+		"/C/wamp/www/philidephia/wp-content/themes/philidephia/functions_copy.php",
+		"/C/wamp/www/philidephia/wp-content/themes/philidephia/functionscopy.php",
+		"/C/wamp/www/philidephia/wp-content/plugins/custom-post-type-pdf-attachment/pdf_attachment.php",
+		"/C/wamp/www/philidephia/wp-content/plugins/custom-post-type-pdf-attachment/custom_pdf_attachment.php",
+		"/C/wamp/www/jon-crocilla/application/views/blog_view.php",
+		"/C/Users/user/Pictures/Desktop/press_template.php",
+		"/C/wamp/www/ebs/wp-content/themes/exact-billing-solutions/page-templates/general_template.php",
+		"/C/wamp/www/gotonepal/.htaccess",
+		"/C/wamp/www/gotonepal/application/.htaccess",
+		"/C/wamp/www/gotonepal/application/views/welcome_message.php",
+		"/C/Users/user/Pictures/Desktop/single-articles.php",
+		"/C/wamp/www/gotonepal/application/views/admin/destination/destination_list_view.php",
+		"/C/wamp/www/gotonepal/application/views/includes/header_view.php",
+		"/C/wamp/www/gotonepal/application/views/admin/region/form_view.php",
+		"/C/wamp/www/gotonepal/application/models/crud_model.php",
+		"/C/wamp/www/gotonepal/application/controllers/admin/region.php",
+		"/C/wamp/www/gotonepal/application/controllers/admin/activities.php",
+		"/C/wamp/www/gotonepal/application/views/admin/includes/footer_view.php",
+		"/C/wamp/www/gotonepal/application/controllers/admin/gallery.php",
+		"/C/wamp/www/gotonepal/application/views/admin/news/form_view.php",
+		"/C/wamp/www/gotonepal/application/views/admin/includes/header_view.php",
+		"/C/wamp/www/gotonepal/application/views/admin/includes/menu_view.php",
+		"/C/wamp/www/jon-crocilla/application/views/lending_view.php",
+		"/C/wamp/www/jon-crocilla/application/views/single_blog_view.php",
+		"/C/wamp/www/jon-crocilla/application/views/top_story_view.php",
+		"/C/wamp/www/jon-crocilla/assets/css/style.css",
+		"/C/wamp/www/jon-crocilla/application/controllers/home.php",
+		"/C/wamp/www/jon-crocilla/application/config/routes.php",
+		"/C/wamp/www/jon-crocilla/application/views/includes/footer_view.php",
+		"/C/wamp/www/jon-crocilla/application/views/details_view.php",
+		"/C/wamp/www/jon-crocilla/application/views/index.php",
+		"/C/wamp/www/jon-crocilla/application/views/questionnaire_view.php",
+		"/C/wamp/www/jon-crocilla/assets/css/custom.css",
+		"/C/wamp/www/jon-crocilla/application/views/listing_view.php",
+		"/C/wamp/www/jon-crocilla/application/config/database.php",
+		"/C/wamp/www/gotonepal/application/views/admin/blog/form_view.php",
+		"/C/wamp/www/gotonepal/application/controllers/admin/blog.php",
+		"/C/wamp/www/gotonepal/application/controllers/gallery.php",
+		"/C/wamp/www/gotonepal/application/views/includes/head.php",
+		"/C/wamp/www/gotonepal/application/libraries/misc_library.php",
+		"/C/wamp/www/gotonepal/application/views/includes/menu.php",
+		"/C/wamp/www/gotonepal/application/controllers/news.php",
+		"/C/wamp/www/gotonepal/application/views/admin/gallery/gallery_list_view.php",
+		"/C/wamp/www/gotonepal/application/views/admin/gallery/gallery_images_view.php",
+		"/C/wamp/www/gotonepal/application/views/gallery_view.php",
+		"/C/wamp/www/gotonepal/application/views/gallery_main_view.php",
+		"/C/wamp/www/gotonepal/application/views/admin/package/package_slider_list_view.php",
+		"/C/wamp/www/gotonepal/application/views/admin/gallery/upload_partial_view.php",
+		"/C/wamp/www/gotonepal/application/views/admin/package/package_list_view.php",
+		"/C/wamp/www/gotonepal/application/views/admin/package/form_view.php",
+		"/C/wamp/www/gotonepal/application/controllers/blog.php",
+		"/C/wamp/www/gotonepal/application/views/destinations_view.php",
+		"/C/wamp/www/gotonepal/application/controllers/destination.php"
+	],
+	"find":
+	{
+		"height": 23.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"trip",
+			"email",
+			"print_r",
+			"send",
+			"booking",
+			"booing",
+			"trip",
+			"booking",
+			"customize",
+			"blog",
+			"team",
+			"date",
+			"download",
+			"order",
+			"send",
+			"send_message",
+			"customize_now",
+			"customize_form",
+			"form",
+			"tabcordion",
+			"modal-1",
+			"booking_form",
+			"form",
+			"tabcordion",
+			"header",
+			"education",
+			"upload\n",
+			"wp_die\n",
+			"nonce\n",
+			";\n",
+			" wp_nonce_field",
+			"post_edit_form_tag",
+			"twitter",
+			"facebook",
+			"news",
+			"blog",
+			"there are",
+			"validation",
+			"Edit",
+			"overview",
+			"get_activities",
+			"get_activites",
+			"get_regio",
+			"offer",
+			"$image",
+			"$iamge",
+			"jquery",
+			"validation",
+			"gallery",
+			"top_stories",
+			"comments",
+			"top",
+			"contact",
+			"questionnaire",
+			"contact_info",
+			"info_ca",
+			"fetaured",
+			"related",
+			"__zsc_once",
+			"zsc",
+			"endforeach",
+			"foreach",
+			"region",
+			"packages",
+			"related",
+			"testimo",
+			"setting",
+			"destination",
+			"dest",
+			"blog",
+			"destination",
+			"blog",
+			"destination",
+			"destination_view",
+			"destination"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "User.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 257.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

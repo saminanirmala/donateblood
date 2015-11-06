@@ -62,7 +62,7 @@ class DashboardController extends Controller
     $validator = $this->menu->menuValidation(Input::all());
     if ($validator->fails()) return Redirect::back()->withErrors($validator)->withInput(Input::all());
     $this->menu->add(Input::all());
-    return redirect('/menulist')->with('success', 'Sucessfully added.');
+    return redirect('/menulist')->with('success', 'Sucessfully added menu okay');
   }
 
   public function changeStatus()

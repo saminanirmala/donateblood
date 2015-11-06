@@ -39,32 +39,26 @@
   </h1>
   <ol class="breadcrumb">
     <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
-    <li><a href="#">Tables</a></li>
+    <li><a href="#">Menu List</a></li>
     <li class="active">Simple</li>
   </ol>
 </section>
 
 <!-- Main content -->
 <section class="content">
-<div class="row">
-<div class="col-md-6">
+      <div class="row">
+        <div class="col-md-12">
+           <div class="row" style="margin: 10px 25px;">
+            <a href="#" class="btn btn-danger show_hide"><i class="fa fa-plus pls"></i>ADD Menu</a>
+           </div> 
+        </div><!-- /.col -->
+      </div><!-- /.row -->
 
-</div><!-- /.col -->
-</div><!-- /.row -->
-<div class="row">
-  <div class="col-md-3">
-
-    <a href="#" class="btn btn-danger show_hide"><i class="fa fa-plus pls"></i>ADD Menu</a>
-    </div>
-
-    <!-- Main content -->
-  <div class="row" style="margin: 10px 25px;">
-    <div class="col-md-12">
+<div class="row">  
+  <div class="col-xs-12">
+    <div class="row" style="margin: 10px 25px;">
       <!-- general form elements -->
       <div class="box box-primary box-width">
-        <div class="box-header with-border">
-          <h3 class="box-title">Add</h3>
-        </div><!-- /.box-header -->
         <!-- form start -->
         {!! Form::open(['url'=>'/menuaction']) !!}
           <div class="box-body">
@@ -81,11 +75,13 @@
           </div>
         {!! Form::close() !!}
       </div><!-- /.box -->
-
     </div>
   </div><!-- end of col -->
-  </div>
+</div><!-- /.row -->
+<div class="row">
   <div class="col-xs-12">
+    <div class="row" style="margin: 10px 25px;">
+
     @if(Session::has('success'))
     <div class="alert alert-success fade in">
       <button data-dismiss="alert" class="close close-sm" type="button">
@@ -110,43 +106,46 @@
       <h2>{{ Session::get('search-result') }}</h2>
     </div>
     @endif
-    <div class="box">
-      <div class="box-header">
-        <h3 class="box-title">Menu List Table</h3>
-        <div class="box-tools">
-          {!! Form::open(['url'=>'/searchaction','method'=>'get']) !!}
-          <div class="input-group" style="width: 150px;">
-            <input type="text" name="keyword" class="form-control input-sm pull-right" placeholder="Search">
-            <div class="input-group-btn">
-              <button type="submit" class="btn btn-sm btn-default"><i class="fa fa-search"></i></button>
-            </div>
-          </div>
-          {!! Form::close() !!}
-        </div>
-      </div><!-- /.box-header -->
-      <div class="box-body table-responsive no-padding">
-        <table class="table table-hover">
-          <tr>
-            <th>S.No</th>
-            <th>Menu Name</th>
-            <th>Status</th>
-          </tr>
-          {{-- */$i=1;/* --}}
-          @foreach($allMenus as $menu)
-          <tr>
-            <td><?php echo $i++;?></td>
-            <td>{{$menu->menu}}</td>
-            @if($menu->status=='publish')
-            <td><a href="{{URL::to('/statusaction')}}?status=unpublish&menuid=<?= $menu->id;?>" class="btn btn-success btn-xs"><i class="fa fa-pencil"></i>{{$menu->status}}</a></td>
-            @else
-            <td><a href="{{URL::to('/statusaction')}}?status=publish&menuid=<?= $menu->id;?>" class="btn btn-danger btn-xs"><i class="fa fa-pencil"></i>{{$menu->status}}</a></td>
-            @endif
-          </tr>
-          @endforeach
-        </table>
-      </div><!-- /.box-body -->
-    </div><!-- /.box -->
+           
+            <div class="box">
+              <div class="box-header">
+                <h3 class="box-title">Menu List Table</h3>
+                <div class="box-tools">
+                  {!! Form::open(['url'=>'/searchaction','method'=>'get']) !!}
+                  <div class="input-group" style="width: 150px;">
+                    <input type="text" name="keyword" class="form-control input-sm pull-right" placeholder="Search">
+                    <div class="input-group-btn">
+                      <button type="submit" class="btn btn-sm btn-default"><i class="fa fa-search"></i></button>
+                    </div>
+                  </div>
+                  {!! Form::close() !!}
+                </div>
+              </div><!-- /.box-header -->
+              <div class="box-body table-responsive no-padding">
+                <table class="table table-hover">
+                  <tr>
+                    <th>S.No</th>
+                    <th>Menu Name</th>
+                    <th>Status</th>
+                  </tr>
+                  {{-- */$i=1;/* --}}
+                  @foreach($allMenus as $menu)
+                  <tr>
+                    <td><?php echo $i++;?></td>
+                    <td>{{$menu->menu}}</td>
+                    @if($menu->status=='publish')
+                    <td><a href="{{URL::to('/statusaction')}}?status=unpublish&menuid=<?= $menu->id;?>" class="btn btn-success btn-xs"><i class="fa fa-pencil"></i>{{$menu->status}}</a></td>
+                    @else
+                    <td><a href="{{URL::to('/statusaction')}}?status=publish&menuid=<?= $menu->id;?>" class="btn btn-danger btn-xs"><i class="fa fa-pencil"></i>{{$menu->status}}</a></td>
+                    @endif
+                  </tr>
+                  @endforeach
+                </table>
+              </div><!-- /.box-body -->
+            </div><!-- /.box -->
+    </div>
   </div>
+</div>
 </div>
 </section><!-- /.content -->
 </div><!-- /.content-wrapper -->
