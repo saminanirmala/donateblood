@@ -54,21 +54,74 @@
 <div class="row">
   <div class="col-md-3">
 
-    <a href="" class="btn btn-danger add_location"><i class="fa fa-plus pls"></i>ADD Room</a>
-    <p>Hiya</p>
-    <p>Such interesting text, eh?</p>
+    <a href="#" class="btn btn-danger show_hide"><i class="fa fa-plus pls"></i>ADD Menu</a>
+    </div>
+
+    <!-- Main content -->
+  <div class="row" style="margin: 10px 25px;">
+    <div class="col-md-12">
+      <!-- general form elements -->
+      <div class="box box-primary box-width">
+        <div class="box-header with-border">
+          <h3 class="box-title">Add</h3>
+        </div><!-- /.box-header -->
+        <!-- form start -->
+        {!! Form::open(['url'=>'/menuaction']) !!}
+          <div class="box-body">
+            <div class="form-group">
+              <label for="exampleInputEmail1">Menu Name</label>
+              <input type="text" class="form-control" name="menu" id="exampleInputEmail1" placeholder="Enter Menu">
+              @if($errors->any())
+              <label class="error" for="name">{{$errors->first('menu')}}</label>
+              @endif
+            </div>
+          </div><!-- /.box-body -->
+          <div class="box-footer">
+            <button type="submit" class="btn btn-primary">Add</button>
+          </div>
+        {!! Form::close() !!}
+      </div><!-- /.box -->
+
+    </div>
   </div><!-- end of col -->
+  </div>
   <div class="col-xs-12">
+    @if(Session::has('success'))
+    <div class="alert alert-success fade in">
+      <button data-dismiss="alert" class="close close-sm" type="button">
+        <i class="fa fa-times"></i>
+      </button>
+      <h2>{{ Session::get('success') }}</h2>
+    </div>
+    @endif
+    @if(Session::has('menu-edit'))
+    <div class="alert alert-success fade in">
+      <button data-dismiss="alert" class="close close-sm" type="button">
+        <i class="fa fa-times"></i>
+      </button>
+      <h2>{{ Session::get('menu-edit') }}</h2>
+    </div>
+    @endif
+    @if(Session::has('search-result'))
+    <div class="alert alert-success fade in">
+      <button data-dismiss="alert" class="close close-sm" type="button">
+        <i class="fa fa-times"></i>
+      </button>
+      <h2>{{ Session::get('search-result') }}</h2>
+    </div>
+    @endif
     <div class="box">
       <div class="box-header">
         <h3 class="box-title">Menu List Table</h3>
         <div class="box-tools">
+          {!! Form::open(['url'=>'/searchaction','method'=>'get']) !!}
           <div class="input-group" style="width: 150px;">
-            <input type="text" name="table_search" class="form-control input-sm pull-right" placeholder="Search">
+            <input type="text" name="keyword" class="form-control input-sm pull-right" placeholder="Search">
             <div class="input-group-btn">
-              <button class="btn btn-sm btn-default"><i class="fa fa-search"></i></button>
+              <button type="submit" class="btn btn-sm btn-default"><i class="fa fa-search"></i></button>
             </div>
           </div>
+          {!! Form::close() !!}
         </div>
       </div><!-- /.box-header -->
       <div class="box-body table-responsive no-padding">
@@ -78,11 +131,18 @@
             <th>Menu Name</th>
             <th>Status</th>
           </tr>
+          {{-- */$i=1;/* --}}
+          @foreach($allMenus as $menu)
           <tr>
-            <td>183</td>
-            <td>John Doe</td>
-            <td><span class="label label-danger">Denied</span></td>
+            <td><?php echo $i++;?></td>
+            <td>{{$menu->menu}}</td>
+            @if($menu->status=='publish')
+            <td><a href="{{URL::to('/statusaction')}}?status=unpublish&menuid=<?= $menu->id;?>" class="btn btn-success btn-xs"><i class="fa fa-pencil"></i>{{$menu->status}}</a></td>
+            @else
+            <td><a href="{{URL::to('/statusaction')}}?status=publish&menuid=<?= $menu->id;?>" class="btn btn-danger btn-xs"><i class="fa fa-pencil"></i>{{$menu->status}}</a></td>
+            @endif
           </tr>
+          @endforeach
         </table>
       </div><!-- /.box-body -->
     </div><!-- /.box -->

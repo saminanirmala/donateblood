@@ -16,6 +16,7 @@ class Donor extends Model
     'address' => 'required|min:3',
     'contact' => 'regex:/^[\+]?([0-9]*)\s*\(?\s*([0-9]{3})?\s*\)?[\s\-\.]*([0-9]{3})[\s\-\.]*([0-9]{4})[a-zA-Z\s\,\.]*[x\#]*[a-zA-Z\.\s]*([\d]*)/',
     'ward_number' => 'required|min:1|max:10',
+    'email'    => 'required|email|unique:users',
     'password' => 'required',
     'password_confirm' => 'required|same:password'
   );
@@ -27,6 +28,15 @@ class Donor extends Model
 
   public function add($donorDatas)
   {
-    return Donor::create($donorDatas);
+    $thisData['name']=$donorDatas['name'];
+    $thisData['address']=$donorDatas['address'];
+    $thisData['gender']=$donorDatas['gender'];
+    $thisData['dob']=$donorDatas['dob'];
+    $thisData['contact']=$donorDatas['contact'];
+    $thisData['ward_number']=$donorDatas['ward_number'];
+    $thisData['email']=$donorDatas['email'];
+    $thisData['password']=md5($donorDatas['password']);
+    $thisData['blood_type']=$donorDatas['blood_type'];
+    return Donor::create($thisData);
   }
 }

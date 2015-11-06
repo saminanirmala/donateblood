@@ -12,8 +12,8 @@
     </a>
   </li>
   <li>
-    <a href="pages/widgets.html">
-      <i class="fa fa-th"></i> <span>Widgets</span> <small class="label pull-right bg-green">new</small>
+    <a href="{{ url('/postlist') }}">
+      <i class="fa fa-th"></i> <span>Posts</span> <small class="label pull-right bg-green">new</small>
     </a>
   </li>
   <li class="treeview">

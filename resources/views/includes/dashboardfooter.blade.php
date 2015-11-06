@@ -210,10 +210,24 @@
 <!-- AdminLTE for demo purposes -->
 <script src="{{ URL::asset('public/dist/js/demo.js') }}"></script>
 <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+<script type="text/javascript" src="http://cdn.ckeditor.com/4.5.4/standard/ckeditor.js"></script>
+<script type="text/javascript">
+
+  $(document).ready(function(){
+    $(".box-primary").hide();
+    $(".show_hide").show();
+
+    $('.show_hide').click(function(){
+      $(".box-primary").slideToggle();
+    });
+
+  });
+
+</script>
 <script>
-  $( ".add_location" ).click(function() {
-    alert('hello');
-    $( "p" ).slideToggle( "slow" );
+  CKEDITOR.replace( 'editor', {
+    filebrowserImageBrowseUrl: '/laravel-filemanager?type=Images',
+    filebrowserBrowseUrl: '/laravel-filemanager?type=Files'
   });
 </script>
 </body>

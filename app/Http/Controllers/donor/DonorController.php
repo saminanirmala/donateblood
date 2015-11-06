@@ -26,7 +26,7 @@ class DonorController extends Controller
       $validator=$this->donor->donorValidation(Input::all());
       if($validator->fails())return Redirect::back()->withErrors($validator)->withInput(Input::all());
       $this->donor->add(Input::all());
-      return redirect('/donor')->with('flash_message', ' You are now registered in our system.');
+      return redirect('/donor')->with('success', 'Thank you Donor.You are sucessfully registered.');
     }
 
 

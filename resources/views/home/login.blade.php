@@ -4,7 +4,7 @@
 <body>
 
 <div id="login">
-  {!! Form::open(['url'=>'/loginaction']) !!}
+
   <div class="body bg-gray">
 
 
@@ -24,7 +24,7 @@
 
     <h2><span class="fontawesome-lock"></span>Sign In</h2>
 
-    <form action="javascript:void(0);" method="POST">
+    {!! Form::open(['url'=>'/loginaction']) !!}
 
 
         <fieldset>

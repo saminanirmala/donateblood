@@ -73,7 +73,6 @@ class AuthController extends Controller
 
   public function postLogin(AdminRequest $request)
   {
-
     $throttles = in_array(
       ThrottlesLogins::class, class_uses_recursive(get_class($this))
     );
@@ -183,6 +182,7 @@ class AuthController extends Controller
 
   public function redirectPath()
   {
+
     if (property_exists($this, 'redirectPath')) {
       return $this->redirectPath;
     }
