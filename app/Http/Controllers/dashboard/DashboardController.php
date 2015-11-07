@@ -89,6 +89,15 @@ class DashboardController extends Controller
     }
   }
 
+
+  /** nirmala**/
+  public function deleteMenu()
+  {
+    $menuId = Input::get('menuid');
+    $this->menu->where('id', 'like', $menuId)->delete();
+    return redirect('/menulist');
+  }
+
   /**
    * Store a newly created resource in storage.
    *

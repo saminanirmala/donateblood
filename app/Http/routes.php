@@ -26,3 +26,5 @@ Route::get('/menulist', 'dashboard\DashboardController@listMenu');
 Route::get('/postlist', 'dashboard\DashboardController@listPost');
 Route::get('/addmenu', 'dashboard\DashboardController@addMenu');
 Route::get('/logout', 'Auth\AuthController@getLogout');
+/**nirmala**/
+Route::get('/deletemenu', 'dashboard\DashboardController@deleteMenu');

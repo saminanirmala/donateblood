@@ -127,6 +127,7 @@
                     <th>S.No</th>
                     <th>Menu Name</th>
                     <th>Status</th>
+                    <th>Action</th>
                   </tr>
                   {{-- */$i=1;/* --}}
                   @foreach($allMenus as $menu)
@@ -138,6 +139,10 @@
                     @else
                     <td><a href="{{URL::to('/statusaction')}}?status=publish&menuid=<?= $menu->id;?>" class="btn btn-danger btn-xs"><i class="fa fa-pencil"></i>{{$menu->status}}</a></td>
                     @endif
+                   
+                    <td><a href="" class="btn btn-info btn-xs"><i class="fa fa-edit"></i>
+                        <a href="{{URL::to('/deletemenu')}}?menuid=<?= $menu->id;?>" onclick="return confirm('Are you sure?')" class="btn btn-danger btn-xs"><i class="fa fa-close"></i></td>
+                   
                   </tr>
                   @endforeach
                 </table>
